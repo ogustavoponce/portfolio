@@ -1,32 +1,48 @@
-// Inicializar AOS (Animate On Scroll) Library
-// Isso faz os elementos aparecerem suavemente quando você rola a página
+// 1. Inicializar AOS (Animate On Scroll)
 document.addEventListener('DOMContentLoaded', () => {
     AOS.init({
-        once: true, // Animação roda apenas uma vez para não ficar irritante
-        offset: 100, // Começa a animar 100px antes do elemento aparecer
+        once: true,
+        offset: 50,
         duration: 800,
         easing: 'ease-out-cubic',
     });
 });
 
-// Menu Mobile (Simples e funcional)
+// 2. Menu Mobile (CORREÇÃO DE BUG)
+const mobileBtn = document.getElementById('mobile-btn');
+const navMenu = document.getElementById('nav-menu');
+const navLinks = document.querySelectorAll('.nav-link');
+
+// Abrir/Fechar ao clicar no ícone
+mobileBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    
+    // Animação do ícone (transformar hambúrguer em X opcional, aqui apenas toggle)
+    mobileBtn.classList.toggle('active-icon');
+});
+
+// Fechar menu ao clicar em um link
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+    });
+});
+
+// 3. Efeito Navbar ao Scrollar
 const navbar = document.querySelector('#navbar');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(2, 11, 22, 0.95)';
+        navbar.style.background = 'rgba(2, 11, 22, 0.98)';
         navbar.style.boxShadow = '0 5px 20px rgba(0,0,0,0.5)';
+        navbar.style.padding = '15px 0'; // Fica menor e mais elegante
     } else {
         navbar.style.background = 'rgba(2, 11, 22, 0.85)';
         navbar.style.boxShadow = 'none';
+        navbar.style.padding = '20px 0';
     }
 });
 
-// Efeito Glitch no Título (Opcional, dá um toque Cyberpunk)
-const title = document.querySelector('h1');
-// Você pode adicionar lógica de glitch aqui se quiser algo mais avançado,
-// mas o CSS já cuida da maior parte do visual.
-
-// Form Submission Mockup (Para testar o botão)
+// 4. Form Submission Mockup
 const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
