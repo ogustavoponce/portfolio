@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo Ponce | Digital Creator</title>
+    <!-- Fontes Premium -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Fundo Animado (Luzes Flutuantes) -->
+    <div class="background-glow">
+        <div class="glow-blob blob-1"></div>
+        <div class="glow-blob blob-2"></div>
+    </div>
+
+    <header id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">GP<span class="neon-dot">.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#skills">Expertise</a></li>
+                    <li><a href="#work">Destaques</a></li>
+                    <li><a href="#contact" class="btn-nav">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                    <span class="badge-neon">Designer & Developer</span>
+                    <h1>Criando o <br><span class="gradient-text">Extraordinário.</span></h1>
+                    <p>Olá, sou Gustavo Ponce. Transformo ideias complexas em experiências digitais imersivas. Design, Audiovisual e Código em perfeita sintonia.</p>
+                    <div class="hero-buttons">
+                        <a href="#work" class="btn-primary">Ver Destaques <i class="fas fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn-secondary">Fale Comigo</a>
+                    </div>
+                </div>
+                <div class="hero-img" data-aos="zoom-in" data-aos-duration="1200">
+                    <div class="img-wrapper">
+                        <!-- Substitua pelo seu arquivo: assets/img/perfil-pro.png -->
+                        <img src="assets/img/perfil-pro.png" alt="Gustavo Ponce" class="profile-pic">
+                        <div class="floating-card card-1"><i class="fas fa-code"></i> Dev</div>
+                        <div class="floating-card card-2"><i class="fas fa-pen-nib"></i> Design</div>
+                        <div class="floating-card card-3"><i class="fas fa-video"></i> Motion</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE DESTAQUES (O "Petisco") -->
+        <section id="work" class="work-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Seleção Premium</h2>
+                    <p>Uma curadoria dos meus melhores projetos. Menos é mais.</p>
+                </div>
+
+                <!-- Categoria: Design -->
+                <div class="category-block">
+                    <h3 class="cat-title"><i class="fas fa-palette"></i> Design Gráfico</h3>
+                    <div class="grid-projects">
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-img" style="background-image: url('assets/img/design-1.jpg');"></div>
+                            <div class="card-overlay">
+                                <h4>Identidade Visual</h4>
+                                <p>Branding Corporativo</p>
+                            </div>
+                        </div>
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-img" style="background-image: url('assets/img/design-2.jpg');"></div>
+                            <div class="card-overlay">
+                                <h4>Social Media</h4>
+                                <p>Campanha High-End</p>
+                            </div>
+                        </div>
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-img" style="background-image: url('assets/img/design-3.jpg');"></div>
+                            <div class="card-overlay">
+                                <h4>UI Design</h4>
+                                <p>Interface de App</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria: Audiovisual -->
+                <div class="category-block">
+                    <h3 class="cat-title"><i class="fas fa-film"></i> Audiovisual & Motion</h3>
+                    <div class="grid-projects">
+                        <div class="project-card" data-aos="fade-up">
+                            <div class="card-img" style="background-image: url('assets/img/video-1.jpg');">
+                                <div class="play-icon"><i class="fas fa-play"></i></div>
+                            </div>
+                            <div class="card-overlay">
+                                <h4>Comercial TV</h4>
+                                <p>Edição & Color Grading</p>
+                            </div>
+                        </div>
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-img" style="background-image: url('assets/img/video-2.jpg');">
+                                <div class="play-icon"><i class="fas fa-play"></i></div>
+                            </div>
+                            <div class="card-overlay">
+                                <h4>Reels Viral</h4>
+                                <p>Motion Graphics</p>
+                            </div>
+                        </div>
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-img" style="background-image: url('assets/img/video-3.jpg');">
+                                <div class="play-icon"><i class="fas fa-play"></i></div>
+                            </div>
+                            <div class="card-overlay">
+                                <h4>Intro Youtube</h4>
+                                <p>Animação 2D</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Categoria: Dev -->
+                 <div class="category-block">
+                    <h3 class="cat-title"><i class="fas fa-laptop-code"></i> Desenvolvimento Web</h3>
+                    <div class="grid-projects">
+                        <div class="project-card" data-aos="flip-left">
+                            <div class="card-img" style="background-image: url('assets/img/dev-1.jpg');"></div>
+                            <div class="card-overlay">
+                                <h4>E-commerce</h4>
+                                <p>Plataforma Fullstack</p>
+                            </div>
+                        </div>
+                        <div class="project-card" data-aos="flip-left" data-aos-delay="100">
+                            <div class="card-img" style="background-image: url('assets/img/dev-2.jpg');"></div>
+                            <div class="card-overlay">
+                                <h4>Landing Page</h4>
+                                <p>Alta Conversão</p>
+                            </div>
+                        </div>
+                        <div class="project-card" data-aos="flip-left" data-aos-delay="200">
+                            <div class="card-img" style="background-image: url('assets/img/dev-3.jpg');"></div>
+                            <div class="card-overlay">
+                                <h4>Dashboard</h4>
+                                <p>Sistema de Gestão</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOQUEIO DE CONTEÚDO (Gatilho Mental) -->
+                <div class="locked-content" data-aos="zoom-in">
+                    <div class="lock-icon"><i class="fas fa-lock"></i></div>
+                    <h3>Isso é apenas 1% do meu potencial.</h3>
+                    <p>Devido a acordos de confidencialidade e exclusividade, meu portfólio completo está disponível apenas sob solicitação.</p>
+                    <a href="#contact" class="btn-glow">Solicitar Acesso Completo</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contact" class="contact-section">
+            <div class="container contact-container">
+                <div class="contact-info" data-aos="fade-right">
+                    <h2>Vamos criar algo <br> lendário juntos?</h2>
+                    <p>Estou disponível para projetos freelance e colaborações. Se você busca qualidade acima da média, me envie uma mensagem.</p>
+                    <div class="contact-methods">
+                        <div class="method">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>(41) 99999-9999</span>
+                        </div>
+                        <div class="method">
+                            <i class="far fa-envelope"></i>
+                            <span>contato@gustavoponce.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" required>
+                            <label>Seu Nome</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" required>
+                            <label>Seu E-mail</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea required></textarea>
+                            <label>Mensagem</label>
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar Mensagem <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ CAPRICHADO -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-col brand-col">
+                <h2 class="footer-logo">GP<span class="neon-dot">.</span></h2>
+                <p>Elevando o padrão do design e desenvolvimento web. Focado em resultados e estética impecável.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#work">Portfólio</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Serviços</h4>
+                <ul>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Edição de Vídeo</a></li>
+                    <li><a href="#">Identidade Visual</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Redes</h4>
+                <div class="social-links">
+                    <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-behance"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Gustavo Ponce. Todos os direitos reservados.</p>
+            <p class="made-by">Feito com <i class="fas fa-bolt neon-pulse"></i> e muito código.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
