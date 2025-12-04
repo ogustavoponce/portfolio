@@ -15,7 +15,7 @@
 </head>
 <body>
 
-    <!-- Fundo Animado -->
+    <!-- Fundo Animado (Com efeito Pulsante agora) -->
     <div class="background-glow">
         <div class="glow-blob blob-1"></div>
         <div class="glow-blob blob-2"></div>
@@ -23,14 +23,13 @@
 
     <header id="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">GP<span class="neon-dot">.</span></a>
+            <a href="#home" class="logo">GP<span class="neon-dot">.</span></a>
             
             <nav>
-                <!-- Adicionei a classe "nav-menu" para facilitar o JS -->
+                <!-- Menu Simplificado -->
                 <ul class="nav-links" id="nav-menu">
                     <li><a href="#home" class="nav-link">Início</a></li>
-                    <li><a href="#skills" class="nav-link">Expertise</a></li>
-                    <li><a href="#work" class="nav-link">Destaques</a></li>
+                    <li><a href="#work" class="nav-link">Portfólio</a></li>
                     <li><a href="#contact" class="btn-nav nav-link">Contato</a></li>
                 </ul>
             </nav>
@@ -51,7 +50,7 @@
                     <h1>Criando o <br><span class="gradient-text">Extraordinário.</span></h1>
                     <p>Olá, sou Gustavo Ponce. Transformo ideias complexas em experiências digitais imersivas. Design, Audiovisual e Código em perfeita sintonia.</p>
                     <div class="hero-buttons">
-                        <a href="#work" class="btn-primary">Ver Destaques <i class="fas fa-arrow-right"></i></a>
+                        <a href="#work" class="btn-primary">Ver Portfólio <i class="fas fa-arrow-right"></i></a>
                         <a href="#contact" class="btn-secondary">Fale Comigo</a>
                     </div>
                 </div>
@@ -59,7 +58,7 @@
                     <div class="img-wrapper">
                         <!-- Substitua pela sua foto -->
                         <img src="assets/img/perfil-pro.png" alt="Gustavo Ponce" class="profile-pic">
-                        <!-- Cards flutuantes (somem no mobile para não bugar) -->
+                        <!-- Cards flutuantes (somente Desktop) -->
                         <div class="floating-card card-1"><i class="fas fa-code"></i> Dev</div>
                         <div class="floating-card card-2"><i class="fas fa-pen-nib"></i> Design</div>
                         <div class="floating-card card-3"><i class="fas fa-video"></i> Motion</div>
@@ -68,7 +67,7 @@
             </div>
         </section>
 
-        <!-- SEÇÃO DE DESTAQUES -->
+        <!-- SEÇÃO DE DESTAQUES (PORTFOLIO) -->
         <section id="work" class="work-section">
             <div class="container">
                 <div class="section-header" data-aos="fade-up">
@@ -182,11 +181,11 @@
             <div class="container contact-container">
                 <div class="contact-info" data-aos="fade-right">
                     <h2>Vamos criar algo <br> lendário juntos?</h2>
-                    <p>Estou disponível para projetos freelance e colaborações. Se você busca qualidade acima da média, me envie uma mensagem.</p>
+                    <p>Estou disponível para projetos freelance e colaborações.</p>
                     <div class="contact-methods">
                         <div class="method">
                             <i class="fab fa-whatsapp"></i>
-                            <span>(42) 99926-6931</span>
+                            <span>(41) 99999-9999</span>
                         </div>
                         <div class="method">
                             <i class="far fa-envelope"></i>
@@ -215,45 +214,22 @@
         </section>
     </main>
 
-    <!-- RODAPÉ -->
+    <!-- RODAPÉ SIMPLIFICADO -->
     <footer class="main-footer">
         <div class="container footer-content">
-            <div class="footer-col brand-col">
+            <div class="footer-brand">
                 <h2 class="footer-logo">GP<span class="neon-dot">.</span></h2>
-                <p>Elevando o padrão do design e desenvolvimento web. Focado em resultados e estética impecável.</p>
+                <p>&copy; 2024 Gustavo Ponce. Todos os direitos reservados.</p>
+                <p class="made-by">Feito com <i class="fas fa-bolt neon-pulse"></i> e muito código.</p>
             </div>
             
-            <div class="footer-col">
-                <h4>Navegação</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#work">Portfólio</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                </ul>
+            <div class="footer-social">
+                <!-- Redes Sociais solicitadas -->
+                <a href="https://linkedin.com/in/gustavoponce" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://facebook.com/gustavoponce" target="_blank" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/gustavoponce" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/c/gustavoponce" target="_blank" class="social-btn"><i class="fab fa-youtube"></i></a>
             </div>
-
-            <div class="footer-col">
-                <h4>Serviços</h4>
-                <ul>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Edição de Vídeo</a></li>
-                    <li><a href="#">Identidade Visual</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>Redes</h4>
-                <div class="social-links">
-                    <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-btn"><i class="fab fa-behance"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Gustavo Ponce. Todos os direitos reservados.</p>
-            <p class="made-by">Feito com <i class="fas fa-bolt neon-pulse"></i> e muita paixão.</p>
         </div>
     </footer>
 
@@ -262,3 +238,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+

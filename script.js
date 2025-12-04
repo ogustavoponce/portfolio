@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// 2. Menu Mobile (CORREÇÃO DE BUG)
+// 2. Menu Mobile
 const mobileBtn = document.getElementById('mobile-btn');
 const navMenu = document.getElementById('nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
@@ -16,8 +16,6 @@ const navLinks = document.querySelectorAll('.nav-link');
 // Abrir/Fechar ao clicar no ícone
 mobileBtn.addEventListener('click', () => {
     navMenu.classList.toggle('active');
-    
-    // Animação do ícone (transformar hambúrguer em X opcional, aqui apenas toggle)
     mobileBtn.classList.toggle('active-icon');
 });
 
@@ -34,7 +32,7 @@ window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
         navbar.style.background = 'rgba(2, 11, 22, 0.98)';
         navbar.style.boxShadow = '0 5px 20px rgba(0,0,0,0.5)';
-        navbar.style.padding = '15px 0'; // Fica menor e mais elegante
+        navbar.style.padding = '15px 0';
     } else {
         navbar.style.background = 'rgba(2, 11, 22, 0.85)';
         navbar.style.boxShadow = 'none';
@@ -42,7 +40,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// 4. Form Submission Mockup
+// 4. Form Mockup
 const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -53,7 +51,7 @@ form.addEventListener('submit', (e) => {
     btn.style.opacity = '0.7';
     
     setTimeout(() => {
-        btn.innerHTML = '<i class="fas fa-check"></i> Enviado com Sucesso!';
+        btn.innerHTML = '<i class="fas fa-check"></i> Enviado!';
         btn.style.background = '#00ff88';
         btn.style.color = '#000';
         form.reset();
